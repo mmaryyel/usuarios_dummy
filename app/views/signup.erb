@@ -1,0 +1,29 @@
+
+<div class="form-style-1">
+<label>
+<p>CREA UNA CUENTA CON NOSOTROS</p>
+
+  <form action="/signup" method="POST">
+  <fieldset>
+    <legend>Ingresa tus datos:</legend>
+
+    <%if @falla%>
+      <p> Revisa tus datos, tienes un valor invalido</p>
+    <%end%>
+    <br>
+    Nombre:   
+    <input type="text" placeholder="name" name="name">  
+    <br>
+    Email:    
+    <input type="text" placeholder="email" name="email">
+    <br>
+    Contraseña: 
+    <input type="password" placeholder="password" name="password">  
+    <p> Asegurate que hayas ingresado tus datos correctamente</p>
+    <br>
+    <p> Si tus datos son correctos presiona "Sing Up!"</p>
+  <!-- EXAMPLE INPUT SUBMIT -->
+    </label>
+    <input type="submit" value="Sign Up!" />
+  </fieldset>
+</form>

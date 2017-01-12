@@ -1,0 +1,25 @@
+
+<div class="form-style-3">
+  <label><p>Ingresa tus datos para iniciar sesión</p>
+ 
+  <form action="/login" method="POST">
+  <fieldset>
+    <legend>LOG IN:</legend>
+    <% if @falla%>
+      <p> Usuario no encontrado</p>
+    <%end%>
+    <br>
+    Email:    
+    <input type="text" placeholder="email" name="email">
+    <br>
+    Contraseña: 
+    <input type="password" placeholder="password" name="password"> 
+    </label> 
+    <br>
+    <br>
+    <input type="submit" value="Log in!" />
+    
+    </br>
+  </fieldset>
+</form>
+
